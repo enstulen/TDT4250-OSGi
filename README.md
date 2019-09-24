@@ -2,11 +2,15 @@
 
 ## Structure
 
-The project is divided into modules. Currently these are `jaxservlet`, `gogo` and `api` as well as two specific implementations - `weight` and `currency`.
+The project is divided into modules to provide modularity. Currently these are `jaxservlet`, `gogo` and `api` as well as two specific implementations - `weight` and `currency`. The system is extensible because the server uses @Reference and can take in any Converter component, which it will use.
+
+_Disclaimer:_ I worked alongside Kristian Rekstad, so our assignments are inspired by each other.
 
 ## Usage
 
 Run the servlet `jaxservlet` in Eclipse using the `bnd.bnd` file and clicking `Run OSGi` under the `run` tab. This will run all the necessary bundles.
+
+The project was made with Java 11, but no 11 specific APIs are used. Make sure your distribution has Nashorn (Java's javascript engine). It is scheduled for removal in newer JDKs.
 
 ### Servlet
 
