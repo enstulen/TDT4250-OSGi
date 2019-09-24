@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="tdt4250.unitconversion.currency" increment="1569341801062">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="tdt4250.unitconversion.currency"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="0.0.0.201909241616" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="0.0.0.201909241616" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="tdt4250.unitconversion.currency"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="0.0.0.201909241616" type="Version"/>
+      <attribute name="osgi.wiring.host" value="tdt4250.unitconversion.currency"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="tdt4250.unitconversion.api"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="tdt4250.unitconversion.currency"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="tdt4250.unitconversion.api.Converter" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="4322" type="Long"/>
+      <attribute name="url" value="generated/tdt4250.unitconversion.currency.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="79DB1A4CBBDC9C85933719158E9CA3F50017D01B5C850A654B504B13BE422D56"/>
+    </capability>
+    <capability namespace="bndtools.workspace">
+      <attribute name="bndtools.workspace" value="file:/Users/enstulen2/eclipse-workspace/eclipse-workspace2"/>
+      <attribute name="project.path" value="/tdt4250.unitconversion.currency"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=tdt4250.unitconversion.api)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=tdt4250.unitconversion.currency)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
+    </requirement>
+  </resource>
+</repository>

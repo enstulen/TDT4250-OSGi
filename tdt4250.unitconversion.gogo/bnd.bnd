@@ -1,0 +1,16 @@
+-buildpath: \
+	osgi.annotation;version=7.0.0,\
+	osgi.core;version=7.0.0,\
+	osgi.cmpn;version=7.0.0,\
+	tdt4250.unitconversion.api;version=latest
+
+-testpath: \
+	${junit},\
+	${mockito},\
+	${mockito-deps}
+
+Bundle-Version: 0.0.0.${tstamp}
+Export-Package: tdt4250.unitconversion.gogo
+-runfw: org.eclipse.osgi;version='[3.13.100.v20180827-1536,3.13.100.v20180827-1536]'
+-runee: JavaSE-11
+Bundle-Activator: tdt4250.unitconversion.gogo.Activator
